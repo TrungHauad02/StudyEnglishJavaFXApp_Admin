@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXFilterComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.englishforadmin.controller.SynonymsAntonymsController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="914.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../assets/wallpaper_content.png" />
+      </ImageView>
+      <VBox layoutX="-2.0" layoutY="2.0" prefHeight="640.0" prefWidth="900.0">
+         <children>
+            <Pane prefHeight="95.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="103.0" fitWidth="906.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="false" smooth="false">
+                     <Image url="@../../assets/wallpaper_header.png" />
+                  </ImageView>
+                  <HBox layoutX="772.0" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #8FC6C3;" visible="false">
+                     <children>
+                        <Button fx:id="btnMinimise" mnemonicParsing="false" prefHeight="34.0" prefWidth="26.0" style="-fx-background-color: 'transparent';">
+                           <graphic>
+                              <ImageView fitHeight="5.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../../assets/icon_minimise.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnMaximise" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: 'transparent';">
+                           <graphic>
+                              <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../../assets/icon_maximise.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnExit" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: 'transparent';">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../../assets/icon_exitwin.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblTitle" layoutX="395.0" layoutY="30.0" text="Synonyms">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="559.0" prefWidth="900.0">
+               <children>
+                  <MFXFilterComboBox fx:id="cbVocabulary" layoutX="144.0" layoutY="77.0" prefHeight="51.0" prefWidth="438.0" />
+                  <MFXButton fx:id="btnAdd" buttonType="RAISED" depthLevel="LEVEL3" disable="true" layoutX="645.0" layoutY="77.0" prefHeight="51.0" prefWidth="138.0" style="-fx-border-radius: 30; -fx-background-radius: 30;" text="Add">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </MFXButton>
+                  <TableView fx:id="tbvVocabulary" layoutX="90.0" layoutY="145.0" prefHeight="384.0" prefWidth="736.0">
+                    <columns>
+                      <TableColumn fx:id="tbcWord" prefWidth="544.8000106811523" text="Word" />
+                      <TableColumn fx:id="tbcDelete" prefWidth="190.39999389648438" text="Delete" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="144.0" layoutY="26.0" text="Vocabulary:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <MFXTextField fx:id="txtVocabulary" editable="false" layoutX="254.0" layoutY="15.0" prefHeight="49.0" prefWidth="326.0" />
+                  <MFXButton fx:id="btnSubmit" buttonType="RAISED" depthLevel="LEVEL3" layoutX="645.0" layoutY="14.0" prefHeight="51.0" prefWidth="138.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: green;" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </MFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

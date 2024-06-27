@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.englishforadmin.controller.Speaking_newController">
+   <ImageView fitHeight="640.0" fitWidth="914.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../assets/wallpaper_content.png" />
+   </ImageView>
+   <VBox layoutX="-2.0" layoutY="2.0" prefHeight="640.0" prefWidth="900.0">
+      <Pane prefHeight="95.0" prefWidth="900.0">
+         <ImageView fitHeight="103.0" fitWidth="906.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="false" smooth="false">
+            <Image url="@../../assets/wallpaper_header.png" />
+         </ImageView>
+         <MFXButton fx:id="btnUserInformation" layoutX="40.0" layoutY="15.0" onAction="#ProfileUserScreen" prefHeight="60.0" prefWidth="195.0" style="-fx-background-radius: 80; -fx-background-color: #8FC6C3; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 80;" text="User : Tham" textFill="WHITE">
+            <font>
+               <Font name="Arial Bold" size="16.0" />
+            </font>
+         </MFXButton>
+
+         <ImageView fx:id="imgAvatar" fitHeight="103.0" fitWidth="94.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../assets/avatar.png" />
+         </ImageView>
+         <MFXButton layoutX="246.0" layoutY="44.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: 'transparent';" text="Grammar">
+            <font>
+               <Font name="Arial Bold" size="19.0" />
+            </font>
+         </MFXButton>
+         <MFXButton layoutX="398.0" layoutY="44.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: 'transparent';" text="Listening">
+            <font>
+               <Font name="Arial Bold" size="19.0" />
+            </font>
+         </MFXButton>
+         <MFXButton layoutX="557.0" layoutY="44.0" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: 'transparent';" text="Speaking" textFill="#a1760b">
+            <font>
+               <Font name="Arial Bold" size="19.0" />
+            </font>
+         </MFXButton>
+         <MFXButton layoutX="709.0" layoutY="44.0" prefHeight="41.0" prefWidth="142.0" style="-fx-background-color: 'transparent';" text="Volcabulary">
+            <font>
+               <Font name="Arial Bold" size="19.0" />
+            </font>
+         </MFXButton>
+         <HBox layoutX="772.0" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #8FC6C3;" visible="false">
+            <Button fx:id="btnMinimise" mnemonicParsing="false" prefHeight="34.0" prefWidth="26.0" style="-fx-background-color: 'transparent';">
+               <graphic>
+                  <ImageView fitHeight="5.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../assets/icon_minimise.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnMaximise" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: 'transparent';">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../assets/icon_maximise.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: 'transparent';">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../../assets/icon_exitwin.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+         </HBox>
+      </Pane>
+      <HBox prefHeight="543.0" prefWidth="909.0">
+         <Pane prefHeight="543.0" prefWidth="205.0">
+            <Pane layoutX="-3.0" layoutY="-4.0" prefHeight="550.0" prefWidth="169.0" style="-fx-background-color: #8FC6C3;">
+               <effect>
+                  <Blend />
+               </effect>
+               <Pane layoutX="12.0" layoutY="3.0" prefHeight="435.0" prefWidth="149.0" style="-fx-background-color: #C2B3D7; -fx-border-color: black;">
+                  <GridPane fx:id="gridpnSpeaking" layoutX="13.0" layoutY="14.0" prefHeight="408.0" prefWidth="123.0" style="-fx-background-color: pink;">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="56.8" minWidth="10.0" prefWidth="56.8" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </opaqueInsets>
+                     <MFXButton fx:id="btnSpeaking01" text="01" />
+                     <MFXButton fx:id="btnSpeaking02" text="02" GridPane.columnIndex="1" />
+                     <MFXButton text="04" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <MFXButton text="05" GridPane.rowIndex="2" />
+                     <MFXButton text="03" GridPane.rowIndex="1" />
+                     <MFXButton text="06" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     <MFXButton text="07" GridPane.rowIndex="3" />
+                     <MFXButton text="08" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     <MFXButton text="09" GridPane.rowIndex="4" />
+                     <MFXButton text="10" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     <MFXButton text="11" GridPane.rowIndex="5" />
+                     <MFXButton text="12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     <MFXButton text="13" GridPane.rowIndex="6" />
+                     <MFXButton text="14" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     <MFXButton text="15" GridPane.rowIndex="7" />
+                     <MFXButton text="16" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                     <MFXButton text="17" GridPane.rowIndex="8" />
+                     <MFXButton text="18" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                     <MFXButton text="19" GridPane.rowIndex="9" />
+                     <MFXButton text="20" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  </GridPane>
+               </Pane>
+            </Pane>
+         </Pane>
+         <Pane fx:id="pnMain" prefHeight="543.0" prefWidth="715.0">
+            <Pane fx:id="pnNewLesson" layoutX="-25.0" layoutY="9.0" prefHeight="516.0" prefWidth="722.0" style="-fx-background-color: #D9D9D9; -fx-border-color: black;">
+               <VBox layoutX="8.0" layoutY="9.0" prefHeight="499.0" prefWidth="705.0">
+                  <Pane fx:id="pnTitleNewLesson" prefHeight="45.0" prefWidth="674.0" style="-fx-border-color: black;">
+                     <Label layoutX="249.0" layoutY="5.0" text="Add new Speaking">
+                        <font>
+                           <Font name="System Bold" size="19.0" />
+                        </font>
+                     </Label>
+                  </Pane>
+                  <Pane fx:id="pnLessonContent" prefHeight="379.0" prefWidth="702.0" style="-fx-border-color: black;">
+                     <Label layoutX="18.0" layoutY="25.0" prefHeight="26.0" prefWidth="40.0" text="Title">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="18.0" layoutY="75.0" text="Content">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Label>
+                     <Region layoutX="122.0" layoutY="14.0" prefHeight="74.0" prefWidth="563.0" style="-fx-border-color: black; -fx-border-radius: 15; -fx-background-color: white; -fx-background-radius: 15;" />
+                     <TextArea fx:id="txtareaTitle" layoutX="136.0" layoutY="15.0" prefHeight="67.0" prefWidth="538.0" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;" />
+                     <Region layoutX="13.0" layoutY="108.0" prefHeight="116.0" prefWidth="672.0" style="-fx-border-color: black; -fx-border-radius: 15; -fx-background-color: white; -fx-background-radius: 15;" />
+                     <TextArea fx:id="txtareaContent" layoutX="25.0" layoutY="110.0" prefHeight="110.0" prefWidth="656.0" style="-fx-background-color: white; -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;" />
+                     <Label layoutX="17.0" layoutY="225.0" text="Example">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Label>
+                     <MFXButton fx:id="btnChooseFile" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="269.0" prefHeight="34.0" prefWidth="251.0" style="-fx-background-color: #F9AE81; -fx-background-radius: 80; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 5);" text="Choose sound" textAlignment="CENTER">
+                        <font>
+                           <Font name="Arial Bold" size="15.0" />
+                        </font>
+                     </MFXButton>
+                     <Pane fx:id="pnImageSource" layoutX="38.0" layoutY="325.0" prefHeight="34.0" prefWidth="319.0" style="-fx-background-color: #F9AE81; -fx-border-color: black;">
+                        <children>
+                           <Label fx:id="lblImageSource" layoutX="6.0" layoutY="9.0" prefHeight="17.0" prefWidth="68.0" text="Source :">
+                              <font>
+                                 <Font name="Arial" size="14.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="lblSrc" layoutX="78.0" layoutY="6.0" maxWidth="230.0" prefHeight="20.0" prefWidth="230.0">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </Pane>
+                  </Pane>
+                  <Pane prefHeight="74.0" prefWidth="674.0" style="-fx-border-color: black; -fx-background-color: #A968ED;">
+                     <MFXButton fx:id="btnCancelNewSpeaking" alignment="CENTER" contentDisplay="CENTER" layoutX="404.0" layoutY="17.0" onAction="#CancelSpeaking_new" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #FCA4C7; -fx-background-radius: 80; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 10);" text="Cancel" textAlignment="CENTER">
+                        <font>
+                           <Font name="Arial Bold" size="16.0" />
+                        </font>
+                     </MFXButton>
+
+                     <MFXButton fx:id="btnSubmitNewSpeaking" alignment="CENTER" contentDisplay="CENTER" layoutX="548.0" layoutY="17.0" onAction="#SubmitSpeaking_new" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #80CD7B; -fx-background-radius: 80; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 10);" text="Add new " textAlignment="CENTER">
+                        <font>
+                           <Font name="Arial Bold" size="16.0" />
+                        </font>
+                     </MFXButton>
+                  </Pane>
+               </VBox>
+            </Pane>
+         </Pane>
+      </HBox>
+   </VBox>
+</AnchorPane>

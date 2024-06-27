@@ -1,0 +1,25 @@
+.modify-button {
+    -fx-background-color: #4CAF50; /* Màu nền xanh lá */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-border-radius: 5px; /* Bo góc */
+    -fx-background-radius: 5px; /* Bo góc nền */
+    -fx-padding: 5px 10px; /* Đệm */
+    -fx-translate-x: 30; /* Dịch sang phải 10px */
+}
+
+.delete-button {
+    -fx-background-color: #F44336; /* Màu nền đỏ */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-border-radius: 5px; /* Bo góc */
+    -fx-background-radius: 5px; /* Bo góc nền */
+    -fx-padding: 5px 10px; /* Đệm */
+    -fx-translate-x: 10; /* Dịch sang phải 10px */
+}
+.text-area {
+    -fx-font-size: 16;
+    -fx-text-fill: black;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+.text-field {
+    -fx-font-size: 16;
+}
